@@ -9,35 +9,30 @@ body {
     flex-wrap: wrap;
 }
 
-.card {
-
-   
-}
-
 .card-image {
 
-    background-color: crimson;
+    background-color: rgb(255, 255, 255);
 
     width: 200px;
     height: 400px;
-    border-radius: 25px;
-    background-size: cover;
-    transform: skew(-5deg)
 
+    border-radius: 25px;
+    object-fit: 100%;
+    background-position: center;
+
+    transform: skew(-5deg)
 }
 
 .card-image:hover {
     cursor: pointer;
+
     transform: scale(1.2);
     transition: all 0.1s ease;
 }
 
-
-
-
-
 .vincent {
     background-image: url(https://farm66.staticflickr.com/65535/52564941619_729404201d_b.jpg);
+    
 }
 
 .genji {
@@ -53,6 +48,8 @@ body {
 .gwen {
 
     background-image: url(https://farm66.staticflickr.com/65535/52566607620_5c81267642_b.jpg);
+    
+    
 }
 
 .scratch {
@@ -70,9 +67,14 @@ body {
     background-image: url(https://farm66.staticflickr.com/65535/52566592185_3ffedce81b_b.jpg);
 }
 
-.uganda {
+.reiji {
 
     background-image: url(https://farm66.staticflickr.com/65535/52566592055_3b0e4b3e3f_b.jpg);
+}
+
+.uganda {
+
+    background-image: url(https://farm66.staticflickr.com/65535/52568080887_554397e5f0_b.jpg);
 }
 
 .evie {

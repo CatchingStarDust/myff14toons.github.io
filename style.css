@@ -3,7 +3,7 @@ body {
     background-color: #121627;
 }
 
-#container {
+.card-position {
 
     max-width: 1500px;
 
@@ -11,23 +11,14 @@ body {
     margin-top: 20vh;   
 }
 
-#card-container {
+.card-display {
 
     display: flex;
     
     flex-direction: row;
 }
 
-.vincard,
-.gencard,
-.masacard,
-.gwencard,
-.scratchcard,
-.oliviacard,
-.magnaicard,
-.reijicard,
-.ugandacard,
-.eviecard {
+.characters{
 
     margin: 0 20px;
 }

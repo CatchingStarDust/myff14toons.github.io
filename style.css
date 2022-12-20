@@ -7,8 +7,21 @@ body {
 .header-container {
 
     background-color: rgb(234, 0, 255);
+
     height: 50px;
     display: flex;
+}
+
+.preview-container {
+    background-color: aqua;
+
+    height: 100;
+    width: 500px;
+    
+    position: absolute;
+    right: 0;
+
+    z-index: 1;
 }
 
 

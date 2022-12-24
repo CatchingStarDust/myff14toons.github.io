@@ -12,7 +12,7 @@ body {
     display: flex;
 }
 
-.preview-container {
+.previewContainer {
     background-color: aqua;
 
     height: 100;
@@ -59,9 +59,6 @@ body {
     transform: skew(-5deg)
 }
 
-.item-image:hover::before {
-    
-}
 
 .item-image:hover {
     cursor: pointer;
@@ -73,7 +70,9 @@ body {
 }
 
 .vincent {
-    background-image: url(https://farm66.staticflickr.com/65535/52564941619_729404201d_b.jpg);
+    background-image: url(https://vincentfrancoeur.carrd.co/assets/images/gallery01/819eac4f_original.jpg?v=413d2045);
+
+    
     
 }
 
@@ -89,14 +88,14 @@ body {
 
 .gwen {
 
-    background-image: url(https://farm66.staticflickr.com/65535/52566607620_5c81267642_b.jpg);
+    background-image: url(https://gwendolynbranwen.carrd.co/assets/images/image03.jpg?v013c216ab);
     
     
 }
 
 .scratch {
 
-    background-image: url(https://farm66.staticflickr.com/65535/52565677247_413ab3e2cd_b.jpg);
+    background-image: url(https://scratchloloyeka.carrd.co/assets/images/image03.jpg?v06181874854451);
 }
 
 .olivia {
@@ -106,7 +105,7 @@ body {
 
 .magnai {
 
-    background-image: url(https://farm66.staticflickr.com/65535/52566592185_3ffedce81b_b.jpg);
+    background-image: url(https://ambagai.carrd.co/assets/images/image05.jpg?v2e3abf957);
 }
 
 .reiji {
@@ -116,7 +115,7 @@ body {
 
 .uganda {
 
-    background-image: url(https://farm66.staticflickr.com/65535/52568080887_554397e5f0_b.jpg);
+    background-image: url(https://uyangaqalli.carrd.co/assets/images/image02.jpg?vba1baa50b);
 }
 
 .evie {

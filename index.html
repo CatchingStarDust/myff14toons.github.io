@@ -24,7 +24,7 @@
 </header>
 
 <header>
-  <div class="preview-container" id="preview-container"></div>
+  <div class="previewContainer" id="previewContainer"></div>
 </header>
 
 <body>
@@ -78,8 +78,12 @@
   const vincentButton = document.getElementById("vincentbutton");
 
   vincentButton.addEventListener("click", function(e) {
-  console.log("You did it!");
-  
+  vincentButton.onclick = function(){
+    vincentButton.classList.previewContainer("");
+    
+    
+  }
+
   });
 
 

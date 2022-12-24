@@ -28,11 +28,24 @@
 </header>
 
 <body>
+ <!--The character bio previews-->
+
+  <section>
+    <figure class="vincentBio" id="vincentBio"></figure>
+
+
+
+
+
+
+
+  </section>
+
  <!--where the character profile cards go.-->
  <section class="flex-container">
 
     <figure class="flex-item">
-      <button class="item-image vincent" id="vincentbutton"></button>
+      <button class="item-image vincent" id="vincentbutton" onclick="toggleVincentBio()"></button>
     </figure>
         
     <figure class="flex-item">
@@ -73,21 +86,7 @@
 
   </section>
 
-<script>
 
-  const vincentButton = document.getElementById("vincentbutton");
-
-  vincentButton.addEventListener("click", function(e) {
-  vincentButton.onclick = function(){
-    vincentButton.classList.previewContainer("");
-    
-    
-  }
-
-  });
-
-
-</script>
 
 </body>
 

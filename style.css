@@ -17,6 +17,7 @@ body {
 
     background-color: #121627;
     
+    
 }
 
 
@@ -77,8 +78,6 @@ body {
 }
 
 
-
-
 .vincentBio {
 
     background-color: #05070c;
@@ -87,12 +86,10 @@ body {
     top: 0;
     right: -60vw;
   
-    height: 1000px;
-    width: 600px;
-    z-index: 1;
-    
-
-    
+    height: 100vw;
+    width: 30vw;
+    padding: 32px;
+    z-index: 1;   
 
 }
 
@@ -103,7 +100,7 @@ body {
 }
 
 
-.flex-container {
+.portait-container {
     
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +110,7 @@ body {
 }
 
 
-.item-image {
+.portait-image {
 
     width: 200px;
     height: 400px;
@@ -127,14 +124,16 @@ body {
     background-position: center;
 
     transform: skew(-5deg)
+    z-index: 1; 
 }
 
 
-.item-image:hover {
+.portait-image:hover {
     cursor: pointer;
 
     transform: scale(1.2);
     transition: all 0.1s ease;
+    z-index: 0; 
 
     box-shadow: 0 0 50px #ffffff;
 }

@@ -15,8 +15,10 @@
 
 body {
 
-    background-color: #121627;
-    
+  background-color: #121627;
+
+  margin:0; 
+  padding: 0;
     
 }
 
@@ -88,9 +90,13 @@ body {
   
     height: 100vw;
     width: 30vw;
-    padding: 32px;
-    z-index: 1;   
 
+    padding: 32px;
+    margin-right: 0px;
+    margin-top: 0px;
+    z-index: 2;   
+
+    transition:  right 0.2s ease-in-out
 }
 
 .vincentBio--open{
@@ -133,7 +139,7 @@ body {
 
     transform: scale(1.2);
     transition: all 0.1s ease;
-    z-index: 0; 
+    z-index: 1; 
 
     box-shadow: 0 0 50px #ffffff;
 }

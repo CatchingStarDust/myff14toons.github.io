@@ -1,11 +1,15 @@
 
-function toggleVincentBio(vincentBio) {
-  let element = document.getElementById("vincentBio");
+function togglebio(elementId) {
+  let element = document.getElementById(elementId);
   
-  if (element.classList.contains("vincentBio" + "--open")) {
-    element.classList.remove("vincentBio" + "--open")
+  if (element.classList.contains("bio" + "--open")) {
+    element.classList.remove("bio" + "--open")
   } 
   else {
-    element.classList.add("vincentBio" + "--open")
+    element.classList.add("bio" + "--open")
   }
 }
+
+togglebio('vincentbio');
+
+togglebio('genjibio');

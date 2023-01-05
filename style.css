@@ -70,6 +70,32 @@ body {
 
 }
 
+.navbar {
+
+    height: 40px;
+    width: 100%;
+}
+
+.btn-close {
+
+    color: #ffffff;
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+  
+}
+
+.btn-close:hover {
+
+    opacity: 0.9;
+    background-color: #394372;
+}
+
 
 .bio {
 

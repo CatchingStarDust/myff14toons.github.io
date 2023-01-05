@@ -11,5 +11,14 @@ function togglebio(elementId) {
 }
 
 togglebio('vincentbio');
-
 togglebio('genjibio');
+togglebio('masabio');
+togglebio('gwenbio');
+togglebio('scratchbio');
+togglebio('oliviabio');
+togglebio('magnaibio');
+togglebio('reijibio');
+togglebio('ugandabio');
+togglebio('eviebio');
+
+

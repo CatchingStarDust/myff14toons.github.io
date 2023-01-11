@@ -2,7 +2,6 @@
     font-family: 'caviar_dreamsbold';
     src: url('Caviar_Dreams_Bold-webfont.eot');
     src: url('Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Caviar_Dreams_Bold-webfont.woff2') format('woff2'),
          url('Caviar_Dreams_Bold-webfont.woff') format('woff'),
          url('Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
          url('Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
@@ -169,7 +168,7 @@ body {
     border-width: 3px;
     object-fit: 100%;
     background-position: center;
-    transform: skew(-5deg)
+    transform: skew(-5deg);
     z-index: 1; 
 }
 
@@ -178,7 +177,7 @@ body {
     cursor: pointer;
     transform: scale(1.2);
     transition: all 0.1s ease;
-    z-index: 1; 
+    z-index: 2; 
     box-shadow: 0 0 50px #ffffff;
 }
 

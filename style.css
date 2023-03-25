@@ -85,15 +85,12 @@ body {
     right: 5px;
     top: 0;
     font-size: 40px;
+    z-index: 2;
     cursor: pointer;
   
 }
 
-.btn-close:hover {
 
-    opacity: 0.9;
-    background-color: #394372;
-}
 
 
 .bio {
@@ -107,7 +104,7 @@ body {
     padding: 32px;
     margin-right: 0px;
     margin-top: 0px;
-    z-index: 2;   
+    z-index: 3;   
     transition:  right 0.2s ease-in-out
     
     
@@ -150,11 +147,10 @@ body {
 
 
 .portait-container {
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
 }
 
 
@@ -170,15 +166,20 @@ body {
     background-position: center;
     transform: skew(-5deg);
     z-index: 1; 
+    margin: 0px;
 }
 
 
 .portait-image:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.2) skew(-5deg);
     transition: all 0.1s ease;
     z-index: 2; 
     box-shadow: 0 0 50px #ffffff;
+}
+
+.portait-image:hover ~ .portait-image {
+    z-index: 1;
 }
 
 .vincent {

@@ -1,14 +1,14 @@
 # landing-page
 
- myff14toons.github.io
+myff14toons.github.io
  
 Thanks for stopping by! If you're here, it means you're interested in knowing what goes on under the hood of my landing page.
 
-#Why did I do this?
+Why did I do this?
 
 Well, as you can see, I like making characters in FF14. But when you have a lot of characters, it gets confusing trying to organize them all. If I wanted to reference another character, I had to hunt down their carrd and link them manually. Not anymore! Now I have a handy-dandy page that acts as a hub for all of my toons.
 
-#What did I use?
+What did I use?
 
 I used HTML and CSS for the actual building of the side, and Javascript for the sliding page animations.
 

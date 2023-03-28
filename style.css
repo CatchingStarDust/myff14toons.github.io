@@ -145,8 +145,7 @@ body {
 
 }
 
-
-.portait-container {
+.portrait-container {
     display: grid;
     grid-template-columns: repeat(5, 220px);
     grid-gap: 10px; 
@@ -154,7 +153,7 @@ body {
 }
 
 
-.portait-image {
+.portrait-image {
 
     width: 200px;
     height: 400px;
@@ -170,7 +169,7 @@ body {
 }
 
 
-.portait-image:hover {
+.portrait-image:hover {
     cursor: pointer;
     transform: scale(1.2) skew(-5deg);
     transition: all 0.1s ease;
@@ -178,8 +177,30 @@ body {
     box-shadow: 0 0 50px #ffffff;
 }
 
-.portait-image:hover ~ .portait-image {
+.portrait-image:hover ~ .portrait-image {
     z-index: 1;
+}
+
+.flex-item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.name-tag {
+    width: 200px;
+    height: 40px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    transition: bottom 0.2s ease-in-out;
+    z-index: 3;
+  }
+
+
+.portrait-image:hover + .name-tag {
+  bottom: 0;
 }
 
 .vincent {

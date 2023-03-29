@@ -114,6 +114,7 @@ section {
     cursor: pointer;
   
 }
+    
 
 
 
@@ -135,11 +136,13 @@ section {
     
 }
 
+
 .bio--open{
 
     right: 0;
     
 }
+
 
 .character-name{
 
@@ -149,7 +152,7 @@ section {
   text-align: center;
 }
 
-.Biotext {
+.biotext {
 
     color: #ffffff;
     font-family: Verdana;
@@ -192,19 +195,6 @@ section {
     margin: 0px;
     position: relative;
     z-index: 1;
-}
-
-@media (max-width: 767px) {
-    .portrait-container {
-        grid-template-columns: repeat(2, 150px);
-        grid-gap: 20px; 
-        
-    }
-
-    .portrait-image {
-        width: 150px;
-        height: 300px;
-    }
 }
 
 .portrait-image:hover {
@@ -270,3 +260,57 @@ section {
 
     background-image: url(https://i.postimg.cc/J49TtPWz/Untitled-1.png);
 }
+
+@media (max-width: 767px) {
+
+
+    .portrait-container {
+        grid-template-columns: repeat(2, 150px);
+        grid-gap: 20px; 
+        
+    }
+
+    .portrait-image {
+        width: 150px;
+        height: 300px;
+    }
+
+        .bio {
+            top: auto;
+            bottom: -100vh;
+            right: 0;
+            height: 80vh;
+            width: 100vw;
+            transition: bottom 0.2s ease-in-out;
+        }
+
+        .bioimage{
+
+            display: flex;
+            justify-content: center;
+            height: 40%;
+            width: 90%;
+            overflow: hidden;
+          
+          }
+    
+        .bio--open {
+            bottom: 0;
+        }
+
+        .character-name {
+            font-size: 30px; 
+        }
+    
+        .biotext {
+            font-size: 12px;
+            text-align: justify;
+            text-justify: inter-word;
+            text-indent: 2em;
+            width: 90%;
+            margin-left auto;
+            margin-right: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    }

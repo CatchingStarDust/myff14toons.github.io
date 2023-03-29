@@ -170,6 +170,8 @@ section {
 
 }
 
+  
+
 .portrait-container {
     display: grid;
     grid-template-columns: repeat(5, 220px);
@@ -192,6 +194,19 @@ section {
     z-index: 1;
 }
 
+@media (max-width: 767px) {
+    .portrait-container {
+        grid-template-columns: repeat(2, 150px);
+        grid-gap: 20px; 
+        
+    }
+
+    .portrait-image {
+        width: 150px;
+        height: 300px;
+    }
+}
+
 .portrait-image:hover {
     cursor: pointer;
     transform: scale(1.2) skew(-5deg) translateY(-40px);
@@ -203,6 +218,7 @@ section {
 .portrait-image:hover ~ .portrait-image {
     z-index: 1;
 }
+
 
 .vincent {
     background-image: url(https://i.postimg.cc/rp4V48st/Portrait.png);   

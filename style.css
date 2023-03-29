@@ -159,8 +159,9 @@ section {
     font-family: Verdana;
     font-size: 15px;
     text-align: justify;
-    text-justify: inter-word;
-    text-indent: 2em;
+  text-justify: inter-word;
+  width: 100%;
+  padding: 20px;
 }
 
 .bioimage{
@@ -411,8 +412,9 @@ section {
         .biotext {
             font-size: 12px;
             text-align: justify;
+            text-justify: inter-word;
             width: 100%;
-            padding: 20px;
+            padding: 30px;
             
         }
     }

@@ -94,6 +94,7 @@ section {
     
 }
 
+/* The X button in the bios */
 
 .navbar {
 
@@ -117,7 +118,7 @@ section {
 }
     
 
-
+/* The bios you see when you click on */
 
 
 .bio {
@@ -175,13 +176,15 @@ section {
 
 }
 
-  
+  /*  The cards themselves */
 
-.portrait-container {
+.portrait-container  {
+    padding: 1em;
     display: grid;
-    grid-template-columns: repeat(5, 220px);
+    grid-template-columns: repeat(5, 150px);
     grid-gap: 10px; 
     justify-content: center;
+    grid-gap: 4em;
 }
 
 .portrait-image {
@@ -211,6 +214,7 @@ section {
     z-index: 1;
 }
 
+/* Card images */
 
 .vincent {
     background-image: url(https://i.postimg.cc/rp4V48st/Portrait.png);   
@@ -263,9 +267,13 @@ section {
     background-image: url(https://i.postimg.cc/J49TtPWz/Untitled-1.png);
 }
 
-/* for smartphones */
+/* for tablets */
 
-@media (max-width: 767px) {
+
+
+@media (max-width: 810px) {
+
+    
 
     body {
 
@@ -374,18 +382,6 @@ section {
         
       }
 
-
-    .portrait-container {
-        grid-template-columns: repeat(2, 150px);
-        grid-gap: 20px; 
-        
-    }
-
-    .portrait-image {
-        width: 150px;
-        height: 300px;
-    }
-
         .bio {
             top: auto;
             bottom: -100vh;
@@ -419,9 +415,25 @@ section {
             text-align: justify;
             text-justify: inter-word;
             width: 100%;
-            padding: 40px;
+            padding-left: 60px;
             
             
             
+        }
+        /* for smartphones */
+
+        @media (max-width: 428px) {
+
+            .portrait-container {
+                grid-template-columns: repeat(2, 150px);
+                grid-gap: 20px; 
+                
+            }
+        
+            .portrait-image {
+                width: 150px;
+                height: 300px;
+            } 
+        
         }
     }

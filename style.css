@@ -263,6 +263,8 @@ section {
     background-image: url(https://i.postimg.cc/J49TtPWz/Untitled-1.png);
 }
 
+/* for smartphones */
+
 @media (max-width: 767px) {
 
     body {
@@ -333,6 +335,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 1;
           
           
       }
@@ -345,6 +348,7 @@ section {
         top: 90px;
         font-size: 20px;
         font-family: 'caviar_dreamsbold', Verdana, Arial, Helvetica, sans-serif;
+        
       
       
       }
@@ -386,9 +390,10 @@ section {
             top: auto;
             bottom: -100vh;
             right: 0;
-            height: 80vh;
+            height: 70vh;
             width: 100vw;
             transition: bottom 0.2s ease-in-out;
+            overflow-wrap: break-word;
         }
 
         .bioimage{
@@ -397,7 +402,7 @@ section {
             justify-content: center;
             height: 31%;
             width: 115%;
-            overflow: hidden;
+            overflow: visible;
           
           }
     
@@ -414,7 +419,9 @@ section {
             text-align: justify;
             text-justify: inter-word;
             width: 100%;
-            padding: 30px;
+            padding: 40px;
+            
+            
             
         }
     }

@@ -20,14 +20,6 @@ body {
     
 }
 
-section {
-
-    position: realative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .title {
   
   
@@ -272,70 +264,28 @@ section {
 
 
 @media (max-width: 810px) {
-
-    
-
-    body {
-
-        background-color: #121627;
-        margin:0; 
-        padding: 0;
-          
-      }
-      
-      section {
-      
-          position: realative;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-
-      .title {
         
-        
-        color: #ffffff;
+    .wave {
         position: absolute;
-        top: 10px;
-        font-size: 50px;
-        font-family: 'caviar_dreamsbold', Verdana, Arial, Helvetica, sans-serif;
-        z-index: 1
-          
-          
-      }
-      
-      .thinBar {
-      
-        background-color: rgb(255, 255, 255);
-        height: 2%;
+        top: 0;
+        left: 0;
         width: 100%;
-        position: absolute;
-        top: 80px;
+        overflow: hidden;
+        line-height: 0;
+    }
       
-      }
+    .wave svg {
+        position: relative;
+        display: block;
+        width: calc(354% + 1.3px);
+        height: 254px;
+    }
       
+    .wave {
+        fill: #7b66f585;
+    }
       
-      .wave {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          overflow: hidden;
-          line-height: 0;
-      }
-      
-      .wave svg {
-          position: relative;
-          display: block;
-          width: calc(354% + 1.3px);
-          height: 254px;
-      }
-      
-      .wave {
-          fill: #7b66f585;
-      }
-      
-      .header-container {
+    .header-container {
       
         position: relative;
         height: 150px;
@@ -343,97 +293,115 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 1;
+        z-index: 1;   
           
-          
-      }
+    }
       
      
-      .welcome-message{
+    .welcome-message{
       
         color: #ffffff;
         position: absolute;
         top: 90px;
         font-size: 20px;
         font-family: 'caviar_dreamsbold', Verdana, Arial, Helvetica, sans-serif;
+      
+    }
+
+    .portrait-container {
+        grid-template-columns: repeat(4, 150px);
+        grid-gap: 20px; 
         
+    }
+
+    .portrait-image {
+        width: 150px;
+        height: 300px;
+    } 
+
+    /* The sliding descriptions */
+
+    .navbar {
       
+        height: 40px;
+        width: 100%;
+    }
+    
+    .btn-close {
       
-      }
-      
-      .navbar {
-      
-          height: 40px;
-          width: 100%;
-      }
-      
-      .btn-close {
-      
-          color: #ffffff;
-          background-color: transparent;
-          border: 0;
-          border-radius: 40%;
-          position: absolute;
-          right: 5px;
-          top: 0;
-          font-size: 40px;
-          z-index: 2;
-          cursor: pointer;
+        color: #ffffff;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        font-size: 40px;
+        z-index: 2;
+        cursor: pointer;
         
-      }
+    }
 
-        .bio {
-            top: auto;
-            bottom: -100vh;
-            right: 0;
-            height: 70vh;
-            width: 100vw;
-            transition: bottom 0.2s ease-in-out;
-            overflow-wrap: break-word;
-        }
+    .bio {
+        position: fixed;
+        top: auto;
+        bottom: -100vh;
+        right: 0;
+        height: 70vh;
+        width: 100vw;
+        transition: bottom 0.2s ease-in-out;
+        overflow-wrap: break-word;
+    }   
 
-        .bioimage{
+    /* background-color: #05070c;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    height: 100vw;
+    width: 30vw;
+    padding: 32px;
+    margin-right: 0px;
+    margin-top: 0px;
+    z-index: 3;   
+    transition:  right 0.2s ease-in-out */
 
-            display: flex;
-            justify-content: center;
-            height: 31%;
-            width: 115%;
-            overflow: visible;
+    .bioimage{
+
+        display: flex;
+        justify-content: center;
+        height: 31%;
+        width: 115%;
+        overflow: visible;
           
-          }
+    }
     
-        .bio--open {
-            bottom: 0;
-        }
+    .bio--open {
+        bottom: 0;
+    }
 
-        .character-name {
-            font-size: 30px; 
-        }
+    .character-name {
+        font-size: 30px; 
+    }
     
-        .biotext {
-            font-size: 12px;
-            text-align: justify;
-            text-justify: inter-word;
-            width: 100%;
-            padding-left: 60px;
+    .biotext {
+        font-size: 12px;
+        text-align: justify;
+        text-justify: inter-word;
+        width: 100%;
+        padding-left: 60px;  
             
-            
-            
-        }
+    }
+        
         /* for smartphones */
 
-        @media (max-width: 428px) {
+    @media (max-width: 428px) {
 
-            .portrait-container {
-                grid-template-columns: repeat(2, 150px);
-                grid-gap: 20px; 
+        .portrait-container {
+            grid-template-columns: repeat(2, 150px);
+            grid-gap: 20px; 
                 
-            }
-        
-            .portrait-image {
-                width: 150px;
-                height: 300px;
-            } 
-        
         }
+        
+        .portrait-image {
+            width: 150px;
+            height: 300px;
+        }   
     }
+}

@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+}
+
+
 @font-face {
     font-family: 'caviar_dreamsbold';
     src: url('Caviar_Dreams_Bold-webfont.eot');
@@ -125,6 +130,9 @@ body {
     padding: 32px;
     margin-right: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
     z-index: 3;   
     transition:  right 0.2s ease-in-out
     
@@ -291,12 +299,13 @@ body {
     .bio {
         position: fixed;
         top: auto;
-        bottom: -0vh; 
+        bottom: -100vh; 
         right: 0;
         height: 60vh;
         width: 100vw;
         transition: bottom 0.2s ease-in-out;
         overflow-wrap: break-word;
+        z-index: 3; 
     }   
 
     .bioimage{

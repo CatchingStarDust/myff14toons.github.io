@@ -82,6 +82,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1; 
     
     
 }
@@ -168,7 +169,7 @@ body {
 
 }
 
-  /*  The cards themselves */
+  /*  The cards and portraits */
 
 .portrait-container  {
     padding: 1em;
@@ -264,64 +265,12 @@ body {
 
 
 @media (max-width: 810px) {
-        
-    .wave {
-        position: absolute;
-        top: 0;
-        left: 0;
+
+    html {
         width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-      
-    .wave svg {
-        position: relative;
-        display: block;
-        width: calc(354% + 1.3px);
-        height: 254px;
-    }
-      
-    .wave {
-        fill: #7b66f585;
-    }
-      
-    .header-container {
-      
-        position: relative;
-        height: 150px;
-        max-width: 2000px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;   
-          
-    }
-      
-     
-    .welcome-message{
-      
-        color: #ffffff;
-        position: absolute;
-        top: 90px;
-        font-size: 20px;
-        font-family: 'caviar_dreamsbold', Verdana, Arial, Helvetica, sans-serif;
-      
     }
 
-    .portrait-container {
-        grid-template-columns: repeat(4, 150px);
-        grid-gap: 20px; 
-        
-    }
-
-    .portrait-image {
-        width: 150px;
-        height: 300px;
-    } 
-
-    /* The sliding descriptions */
-
-    .navbar {
+     .navbar {
       
         height: 40px;
         width: 100%;
@@ -342,25 +291,13 @@ body {
     .bio {
         position: fixed;
         top: auto;
-        bottom: -100vh;
+        bottom: -0vh; 
         right: 0;
-        height: 70vh;
+        height: 60vh;
         width: 100vw;
         transition: bottom 0.2s ease-in-out;
         overflow-wrap: break-word;
     }   
-
-    /* background-color: #05070c;
-    position: fixed;
-    top: 0;
-    right: -60vw;
-    height: 100vw;
-    width: 30vw;
-    padding: 32px;
-    margin-right: 0px;
-    margin-top: 0px;
-    z-index: 3;   
-    transition:  right 0.2s ease-in-out */
 
     .bioimage{
 
@@ -377,7 +314,8 @@ body {
     }
 
     .character-name {
-        font-size: 30px; 
+        font-size: 30px;
+        padding-left: 70px;  
     }
     
     .biotext {

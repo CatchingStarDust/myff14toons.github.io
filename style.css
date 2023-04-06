@@ -1,9 +1,18 @@
 html {
     width: 100%;
 }
-.header-container{
+
+.header-container {
+
     position: relative;
-}
+    height: 100px;
+    max-width: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+      
+  }
 
 .header-bg{
     display: block;
@@ -12,6 +21,7 @@ html {
     padding: 1%;;
     background-color: #0e0e1d;
     z-index: 1;
+    
 }
 
 
@@ -42,7 +52,7 @@ body {
   
     color: #ffffff;
     position: absolute;
-    top: 10px;
+    top: 0px;
     font-size: 50px;
     font-family: 'caviar_dreamsbold', Verdana, Arial, Helvetica, sans-serif;
     z-index: 2;
@@ -53,7 +63,7 @@ body {
   .thinBar {
   
     background-color: rgb(255, 255, 255);
-    height: 2px;
+    height: 1px;
     width: 80%;
     position: absolute;
     top: 80px;
@@ -65,7 +75,7 @@ body {
   
     color: #ffffff;
     position: absolute;
-    top: 90px;
+    top: 100px;
     font-size: 20px;
     font-family: 'caviar_dreamsbold', Verdana, Arial, Helvetica, sans-serif;
     z-index: 2;
@@ -73,9 +83,14 @@ body {
   
   }
 
+  /* .background-pattern{
+
+    position: relative;
+  } */
+
 .wave {
     position: absolute;
-    top: 0;
+    top: 100;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -93,18 +108,7 @@ body {
     fill: #7b66f585;
 }
 
-.header-container {
 
-  position: relative;
-  height: 150px;
-  max-width: 2000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1; 
-    
-    
-}
 
 /* The X button in the bios */
 
@@ -137,7 +141,7 @@ body {
     background-color: #05070c;
     position: fixed;
     top: 0;
-    right: -60vw;
+    right: -80vw;
     height: 100vw;
     width: 30vw;
     padding: 32px;
@@ -146,7 +150,7 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     z-index: 3;   
-    transition:  right 0.2s ease-in-out;
+    transition: right 0.2s ease-in-out;
     
     
 }
@@ -173,9 +177,9 @@ body {
     font-family: Verdana;
     font-size: 15px;
     text-align: justify;
-  text-justify: inter-word;
-  width: 100%;
-  padding: 20px;
+    text-justify: inter-word;
+    width: 100%;
+    padding: 20px;
 }
 
 .bioimage{
@@ -363,4 +367,3 @@ body {
             height: 300px;
         }   
     }
-}

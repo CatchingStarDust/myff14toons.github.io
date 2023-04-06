@@ -15,10 +15,12 @@
 </head>
 
 <header>
-  <div class="header-container">
+    <div class="header-container">
+    <div class="header-bg"></div>
     <div class="title"> My characters</div>
     <div class="thinBar"></div>
-    <div class="welcome-message">Click a portait to learn more!</div>
+    <div class="welcome-message">Click a portait to learn more!
+    </div>
 </header>
 
 <section>
@@ -38,8 +40,8 @@
   
   <!-- this is where the character bios go -->
 
-  <section>
-  
+  <section class="bios">
+    
     <figure class="bio" id="vincentbio">
 
       <div class="navbar">
@@ -61,7 +63,7 @@
   
     </figure>
 
-  <figure class="bio" id="genjibio">
+    <figure class="bio" id="genjibio">
 
     <div class="navbar">
       <button class="btn-close" onclick="exitbio('genjibio')">&times;</button>
@@ -81,7 +83,7 @@
       Click <a href="https://genjidotharl.carrd.co/">here</a> to view the full carrd.
     </div>
 
-  </figure>
+   </figure>
 
     <figure class="bio" id="masabio">
 
@@ -248,7 +250,7 @@
 
  <!--where the character portraits go-->
   
-  <section class="portrait-container">
+   <section class="portrait-container">
 
     <button class="portrait-image vincent" id="vincentbutton" onclick="togglebio('vincentbio')"></button>
 
@@ -270,7 +272,7 @@
 
     <button class="portrait-image evie" id="eviebutton" onclick="togglebio('eviebio')"></button>
     
-</section>
+</section>  
 
 
 

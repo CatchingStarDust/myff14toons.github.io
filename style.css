@@ -190,7 +190,7 @@ body {
 
   /*  The cards and portraits */
 
-.portrait-container  {
+/* .portrait-container  {
     padding: 1em;
     display: grid;
     grid-template-columns: repeat(5, 150px);
@@ -224,7 +224,7 @@ body {
 
 .portrait-image:hover ~ .portrait-image {
     z-index: 1;
-}
+} */
 
 /* Card images */
 
@@ -277,6 +277,17 @@ body {
 .evie {
 
     background-image: url(https://i.postimg.cc/J49TtPWz/Untitled-1.png);
+}
+
+.footer-container{
+
+    position: relative;
+    height: 20vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
 }
 
 /* for tablets */

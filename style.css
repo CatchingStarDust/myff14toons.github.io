@@ -190,7 +190,7 @@ body {
 
   /*  The cards and portraits */
 
-/* .portrait-container  {
+.portrait-container  {
     padding: 1em;
     display: grid;
     grid-template-columns: repeat(5, 150px);
@@ -224,7 +224,7 @@ body {
 
 .portrait-image:hover ~ .portrait-image {
     z-index: 1;
-} */
+}
 
 /* Card images */
 
@@ -282,12 +282,23 @@ body {
 .footer-container{
 
     position: relative;
-    height: 20vh;
+    background-color: #0e0e1d;
+    height: 10vh;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1; 
+}
+
+.exit-message{
+
+    color: #ffffff;
+    position: absolute;
+    top: 45px;
+    font-size: 17px;
+    font-family: 'caviar_dreamsbold', Verdana, Arial, Helvetica, sans-serif;
+    z-index: 2;
 }
 
 /* for tablets */
